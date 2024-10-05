@@ -417,8 +417,8 @@ code/privilege-escalation/linux/rw-sudoers.yaml:f974b1d1a68fd7a8cd24b6f1b61855dd
 code/privilege-escalation/linux/sudo-nopasswd.yaml:3117c141f35b9229b6ebe1db10a4fef77aa6ee17
 code/privilege-escalation/linux/writable-etc-passwd.yaml:c0ad4796f42aab9c901b52b52b91940172d070e9
 contributors.json:951e2ab8bbae42da01f52da9ef0a14ce7f17e159
-cves.json:5788dd6caa52bf5f63bf8c82d0736e8c91aafcbe
-cves.json-checksum.txt:91142336a17d07fa9452a6c18f09c94aedcf7f7b
+cves.json:59ba0b18490c2b7b5cf745e8ab5e31d7e9dcd488
+cves.json-checksum.txt:ff0f85a6ca368b3793ec7cd4f888cfad2694353b
 dast/cves/2018/CVE-2018-19518.yaml:3407e99af553fe5bdb0ffc001a4132e169c55730
 dast/cves/2021/CVE-2021-45046.yaml:a52633e88957969fb09969be45c0a8606ee3d752
 dast/cves/2022/CVE-2022-34265.yaml:e006df0567f928e43d40050f55d5928a3fbff17e
@@ -911,6 +911,7 @@ helpers/payloads/cve-2023-34039-keys/id_rsa_vnera_keypair_6.8.0_platform:f313761
 helpers/payloads/cve-2023-34039-keys/id_rsa_vnera_keypair_6.9.0_collector:1efb4cc54ae18159e7ed9f94d71eb30df5c82db8
 helpers/payloads/cve-2023-34039-keys/id_rsa_vnera_keypair_6.9.0_platform:7bae590cb5bef1589d32311f61d1a7728d3d9847
 helpers/payloads/request-headers.txt:b85d7c53290237323b5374416fbec07237941aa9
+helpers/payloads/retool-xss.svg:8e6f089eecda5994d276216145a1c92f195db9ce
 helpers/payloads/swagger-payload:6e0a08fc7310a1ce07226a012520ba1f73029945
 helpers/payloads/wp-social-warfare-rce.txt:6b93ad84c3035c6779d75057e645171476cbc530
 helpers/wordlists/adminer-paths.txt:3bd330450f41578a8c2d002c6b85face968e2e7a
@@ -3741,6 +3742,7 @@ http/cves/2024/CVE-2024-32651.yaml:801c05cf9fff8ede1e378acbaa7f52b17174a55c
 http/cves/2024/CVE-2024-32709.yaml:de0592811b331a6594fdf4e4b4f4539766ad0ade
 http/cves/2024/CVE-2024-3273.yaml:fe07da69c4e263410727d688d92f4e06000f5c00
 http/cves/2024/CVE-2024-3274.yaml:578789e5289c27456c8a66f9bde8d1160c615d34
+http/cves/2024/CVE-2024-32964.yaml:f1b5908a6cd0bb367fea33497ae979a9bfae2966
 http/cves/2024/CVE-2024-33113.yaml:64a8f2a506f72757a112f312214c4880021b99bb
 http/cves/2024/CVE-2024-33288.yaml:8f48bbe0fdbd458469bbe8dff0f13f0e664c7e09
 http/cves/2024/CVE-2024-33575.yaml:bc3e1dc9d582e0bb3430a33791936484425fb962
@@ -3797,7 +3799,7 @@ http/cves/2024/CVE-2024-43160.yaml:d5baeeff92f97904c3b6202e25f3160dfa6d4111
 http/cves/2024/CVE-2024-43425.yaml:c5d55fa9159426dcb15d374d7c51b13a1050e71d
 http/cves/2024/CVE-2024-4348.yaml:b875149da3d86eb5be674c5f5e93606f3d448a06
 http/cves/2024/CVE-2024-4358.yaml:13a3a1250e1529ffc91043931bb2fc322998103f
-http/cves/2024/CVE-2024-43917.yaml:dea5aea82fab352b9afc3c85e7f0d2f0edf47e7b
+http/cves/2024/CVE-2024-43917.yaml:8feef564db794f7d2b90a4dd9aa7355697ea73aa
 http/cves/2024/CVE-2024-44000.yaml:da1f708dc158096fe8c628af6e36b51e21958ebb
 http/cves/2024/CVE-2024-4434.yaml:597591d430f802f75a17c2c04ae3aee6dcf392de
 http/cves/2024/CVE-2024-4443.yaml:d23e057ea00b1051ec865516a6e246c71ddf420b
@@ -3805,11 +3807,11 @@ http/cves/2024/CVE-2024-44849.yaml:9ca7cec952e5f2f8cbfa8e76fc365d8f03f84dac
 http/cves/2024/CVE-2024-45195.yaml:331e8730b2a9485b6a15057b67ce083f07c264a4
 http/cves/2024/CVE-2024-45241.yaml:b32e4a46b08b7411b242362dafe333b209224ebb
 http/cves/2024/CVE-2024-45388.yaml:433afc604e847a5a8cc2d0d16687e3dce376a1c7
-http/cves/2024/CVE-2024-45440.yaml:5ff1cdadcdf9d8fa80109b765dbd8eee6c20a773
+http/cves/2024/CVE-2024-45440.yaml:42079bcfe2123af3a6f602a0873e4ea18e363377
 http/cves/2024/CVE-2024-45507.yaml:0fba89faecb014ecb7f810822ee27c3e77c50f82
 http/cves/2024/CVE-2024-45622.yaml:f22751185098b16cd3d6b473bb5e8c70e692cf11
 http/cves/2024/CVE-2024-4577.yaml:b256c274afc84e3b8b73d54740a9f2e77c8e4ee6
-http/cves/2024/CVE-2024-46627.yaml:de098e883873755b4fa762dcde58df1d7144d547
+http/cves/2024/CVE-2024-46627.yaml:d780b5a681cf488780944c02cec4510044e7c0f3
 http/cves/2024/CVE-2024-46986.yaml:50b477103c918decc4e15628a782b2db1b541d21
 http/cves/2024/CVE-2024-47062.yaml:db115f37051cb80bcabe02cc001b5aa19a7e17e8
 http/cves/2024/CVE-2024-4836.yaml:2dd1cd40b76fc713b718db4852eb9bca8cf67380
@@ -3823,6 +3825,7 @@ http/cves/2024/CVE-2024-5276.yaml:e7f50b3cd798b3aaddf1a2ef018f0436b565d224
 http/cves/2024/CVE-2024-5315.yaml:c44a89f07ea42ad135e151bf6607b78beb006dd0
 http/cves/2024/CVE-2024-5420.yaml:2c6ffdcabd6e7589c4eb5353c0e74066809de6a4
 http/cves/2024/CVE-2024-5421.yaml:d0ea0763fb92fd29c11f39fa22f6ad7137735720
+http/cves/2024/CVE-2024-5488.yaml:7d9ad7b220289088483a190e02e00798e0abe138
 http/cves/2024/CVE-2024-5522.yaml:4ead21579625d4141e498a5837a73a31b2b99b25
 http/cves/2024/CVE-2024-5765.yaml:487b5d32da8c2a9405653daab7369763cf83830e
 http/cves/2024/CVE-2024-5827.yaml:c8c798630092a11d237eba98e68105f7ddb8cc02
@@ -3838,6 +3841,7 @@ http/cves/2024/CVE-2024-6205.yaml:b7365f0543b4c8a4207086dcf8c8eba65bca7a5d
 http/cves/2024/CVE-2024-6289.yaml:83d044a4385a60a024a6dee9f02644f4db94a4b7
 http/cves/2024/CVE-2024-6366.yaml:13d57831fba2fd50976e1e01e8048ff76767e4a9
 http/cves/2024/CVE-2024-6396.yaml:d43fd7550c98ff812713b0f7dbbed20b18bd42af
+http/cves/2024/CVE-2024-6517.yaml:2dd82270e053e75d6929141df83bc1534ed2876a
 http/cves/2024/CVE-2024-6586.yaml:5034ae7bd1ec3d3b1a62492018d5e9ff14908cda
 http/cves/2024/CVE-2024-6587.yaml:3b9b74b62b5fee24b9ae9e2138affc55ffabe1d3
 http/cves/2024/CVE-2024-6646.yaml:7339f44ccd9af4e94808756810ae8184028d01c9
@@ -3927,7 +3931,7 @@ http/default-logins/crushftp/crushftp-anonymous-login.yaml:1c2a07cb7a8d94b8f3ff2
 http/default-logins/crushftp/crushftp-default-login.yaml:fa782b69aca7b163f717469c959f5ed23285e668
 http/default-logins/d-link/dlink-centralized-default-login.yaml:144088e9a738b069bd642d60d64993447e44f264
 http/default-logins/dataease/dataease-default-login.yaml:24ecd6363875e13a482b7ccab622aaa3f62e9323
-http/default-logins/datagerry/datagerry-default-login.yaml:add70a8742a30438a8a2e41c61ceb53bb08e6d23
+http/default-logins/datagerry/datagerry-default-login.yaml:96f5dbde7a5d1be1454cc40eafcca8c2fbad4f67
 http/default-logins/datahub/datahub-metadata-default-login.yaml:f8e77b0a45ad9ef982be9714022a6d7db5ba13a8
 http/default-logins/dataiku/dataiku-default-login.yaml:2d6e8d71b578986f4adf143f7343bb7ad8748d8b
 http/default-logins/dell/dell-dpi-default-login.yaml:c8dabcfcdb39d6a22dd877512d28139f5e1374f6
@@ -6273,7 +6277,7 @@ http/misconfiguration/locust-exposure.yaml:745e0cd6c0d80af70763e3e5c960a65fbc6d8
 http/misconfiguration/lvm-exporter-metrics.yaml:f1cdf9f009abc6debe3fc3c58740d68b00322c64
 http/misconfiguration/manage-cabinet-register.yaml:ae234231bca79fcef3260e5f188837153bca5d1f
 http/misconfiguration/manage-engine-ad-search.yaml:6651e9595559901ce4c1d1fa82082a53cc619b3d
-http/misconfiguration/microsoft/aspnetcore-dev-env.yaml:2b9a21e102053efbb5465bfc3ff26750a2d04d62
+http/misconfiguration/microsoft/aspnetcore-dev-env.yaml:a1c5e321eb891908532b2fd8317b390d0adb4f4f
 http/misconfiguration/microsoft/ms-exchange-local-domain.yaml:acf08c26999a0c76c8ae4e4625d79d0784b61d18
 http/misconfiguration/mingyu-xmlrpc-sock-adduser.yaml:d680c0d1f329ae9d5f114cf4ac3db72af84f34e3
 http/misconfiguration/misconfigured-concrete5.yaml:d56475cb0edd78cf18150ac40eba183c0a201d7d
@@ -7763,6 +7767,7 @@ http/technologies/web-ftp-detect.yaml:ceaf8743ca94c6fbf3e7d380d0ed9be6f3796120
 http/technologies/web-suite-detect.yaml:94ce185f9aee3a32ab9391218413ba5b4efd408f
 http/technologies/weblogic-detect.yaml:57acbd03a2cd58cd94f92843578359a5b479ac5d
 http/technologies/werkzeug-debugger-detect.yaml:af81a25156ac286ceb63a2599e8b8ddfc6a34542
+http/technologies/wiki-js-detect.yaml:5a759c946be897e061a84f4ac32e3d0fb20879d1
 http/technologies/wing-ftp-service-detect.yaml:92a8c8080c423ecdbe008bff39e4363d22ce995f
 http/technologies/wms-server-detect.yaml:5b24766a9022a18cc343b60f0381f69ce70a0b4d
 http/technologies/wondercms-detect.yaml:940ebbd50bb93299d72b2cc4712da95f4dcb24e8
@@ -8121,6 +8126,7 @@ http/token-spray/api-instagram.yaml:a4f0d2d8b6a15ddbb51864354e3c6eea24e972f1
 http/token-spray/api-instatus.yaml:5b130c24f24ec314092b1524980041b74e5d9af6
 http/token-spray/api-intelx.yaml:7b53c9ce6d5971a5e5bf4990fe8c1ab56cd4993b
 http/token-spray/api-intercom.yaml:8f7076476dc71b00a9fb5903ae2ca027ef25b35b
+http/token-spray/api-intigriti.yaml:e4363a6623f06956818d4b43c69ac84a19387b79
 http/token-spray/api-ip2whois.yaml:c57c1aeb01d5a4939707fd3299b52604523ccab6
 http/token-spray/api-ipdata.yaml:add19a1fa2d4222f8fd428278c2b4fcc2c8f542d
 http/token-spray/api-ipfind.yaml:2ede69625991d8f7cefe5291708d66ba69333f38
@@ -8192,7 +8198,7 @@ http/token-spray/api-scrapingdog.yaml:36ec01b41847600aa7f9ed05803dd8f4512f78b7
 http/token-spray/api-screenshotapi.yaml:23811c030da5191d10880ff1ca3702e804d51738
 http/token-spray/api-securitytrails.yaml:44f62cc4ec23b27f88b04f2fe1cb0c75ff9c05a7
 http/token-spray/api-segment.yaml:63b895eba7eb64c444fae6395fc62d771927d1fd
-http/token-spray/api-sendgrid.yaml:b587e591da451481ef2045c1ef004f50c8aac1c5
+http/token-spray/api-sendgrid.yaml:ec62048f30956a1a020cd293cbcd17c066a23dc4
 http/token-spray/api-sentry.yaml:c27b4ac6a50680ea817425649ebf3207f47a1b41
 http/token-spray/api-serpstack.yaml:8b0856f6dd8f6c8aba7b037e7bc5ca69719e88f8
 http/token-spray/api-shodan.yaml:3a23a419b00daa03036abcdb962ad4aac430d158
@@ -8817,6 +8823,7 @@ http/vulnerabilities/qibocms-file-download.yaml:c5c1fb9a39ad1d8ac93a8163154bb288
 http/vulnerabilities/rails/rails6-xss.yaml:b28fc53f49e6d7a89c50a3da233570d3b05199a4
 http/vulnerabilities/ransomware/deadbolt-ransomware.yaml:03e8de5b6a3af7ba1b4a43ebb40fbf17ad6d70e4
 http/vulnerabilities/realor/realor-gwt-system-sqli.yaml:3db2215e316b355062f1c740519476ba529eaced
+http/vulnerabilities/retool/retool-svg-xss.yaml:0d4d267c32553393af60e67d7448cc36f11b8d59
 http/vulnerabilities/rocketchat/unauth-message-read.yaml:0637a5f584284cef93e1c8664da48e294e1640b1
 http/vulnerabilities/royalevent/royalevent-management-xss.yaml:1ab3bf42fb9af854ff69e4a2b3c422ae78336fc8
 http/vulnerabilities/royalevent/royalevent-stored-xss.yaml:0dff308c17c106878b9b4e1474cbc88e8e5bafc6
@@ -9406,7 +9413,7 @@ ssl/tls-version.yaml:4e40f08efbb39172b9280ea9e26ca5f0a14a575a
 ssl/untrusted-root-certificate.yaml:a91d36990a1d052f5ee64d170ad8f084d38dab19
 ssl/weak-cipher-suites.yaml:62fe808d9dfafda67c410e6cb9445fdc70257e89
 ssl/wildcard-tls.yaml:d244f62c7bd22d3868fc6fc7cb9550af6b261210
-templates-checksum.txt:f266c162596043ad0153823c288aa2bb09006fcd
+templates-checksum.txt:54747744de5d00276a6f0ef624d2c867f1458987
 wappalyzer-mapping.yml:7f03bd65baacac20c1dc6bbf35ff2407959574f1
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
