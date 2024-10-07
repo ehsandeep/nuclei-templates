@@ -1,0 +1,30 @@
+id: microsoft-runtime-error
+
+info:
+  name: Microsoft Runtime Error Page
+  author: DhiyaneshDk
+  severity: info
+  metadata:
+    max-request: 1
+    vendor: microsoft
+    shodan-query: title:"Runtime Error"
+  tags: iis,error,microsoft,log
+
+http:
+  - method: GET
+    path:
+      - '{{BaseURL}}'
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>Runtime Error</title>"
+
+      - type: status
+        status:
+          - 500
+          - 404
+
+# digest: 490a00463044022030103f9da2cadb76c70182208c85c1af6e93b3cfc083cc957ae7b750c2d3ff7802204f2039f435ef1b28aea29b46951b94b506304295d7b8428bae345aaea255b9ff:922c64590222798bb761d5b6d8e72950
