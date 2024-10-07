@@ -1,0 +1,15 @@
+id: basic-example
+
+info:
+  name: Test HTTP Template
+  author: pdteam
+  severity: critical
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers:
+      - type: word
+        words:
+          - "example"
