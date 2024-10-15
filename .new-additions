@@ -1,3 +1,6 @@
+http/cves/2015/CVE-2015-8562.yaml
+http/cves/2021/CVE-2021-45811.yaml
+http/cves/2023/CVE-2023-1315.yaml
 http/cves/2024/CVE-2024-39713.yaml
 http/cves/2024/CVE-2024-43360.yaml
 http/cves/2024/CVE-2024-44349.yaml
@@ -7,8 +10,10 @@ http/exposed-panels/traccar-panel.yaml
 http/exposed-panels/txadmin-panel.yaml
 http/exposed-panels/veritas-netbackup-panel.yaml
 http/exposed-panels/vmware-aria-panel.yaml
+http/misconfiguration/root-path-disclosure.yaml
 http/technologies/accellion-detect.yaml
 http/technologies/mirth-connect-detect.yaml
 http/technologies/oracle-fusion-detect.yaml
 http/technologies/wordpress/plugins/burst-statistics.yaml
 http/vulnerabilities/yonyou/yonyou-u8-crm-tb-sqli.yaml
+passive/cves/2024/CVE-2024-40711.yaml
