@@ -16,6 +16,7 @@ http/cves/2024/CVE-2024-43360.yaml
 http/cves/2024/CVE-2024-44349.yaml
 http/cves/2024/CVE-2024-45488.yaml
 http/cves/2024/CVE-2024-5910.yaml
+http/default-logins/zebra/zebra-printer-default-login.yaml
 http/exposed-panels/paloalto-expedition-panel.yaml
 http/exposed-panels/traccar-panel.yaml
 http/exposed-panels/txadmin-panel.yaml
@@ -26,5 +27,6 @@ http/technologies/accellion-detect.yaml
 http/technologies/mirth-connect-detect.yaml
 http/technologies/oracle-fusion-detect.yaml
 http/technologies/wordpress/plugins/burst-statistics.yaml
+http/vulnerabilities/yonyou/yonyou-u8-crm-sqli.yaml
 http/vulnerabilities/yonyou/yonyou-u8-crm-tb-sqli.yaml
 passive/cves/2024/CVE-2024-40711.yaml
