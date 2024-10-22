@@ -7,6 +7,15 @@ http/cves/2023/CVE-2023-1315.yaml
 http/cves/2023/CVE-2023-1317.yaml
 http/cves/2023/CVE-2023-1318.yaml
 http/cves/2023/CVE-2023-2745.yaml
+http/cves/2023/CVE-2023-38040.yaml
+http/cves/2023/CVE-2023-39560.yaml
+http/cves/2023/CVE-2023-40749.yaml
+http/cves/2023/CVE-2023-40750.yaml
+http/cves/2023/CVE-2023-40751.yaml
+http/cves/2023/CVE-2023-40752.yaml
+http/cves/2023/CVE-2023-40753.yaml
+http/cves/2023/CVE-2023-40755.yaml
+http/cves/2023/CVE-2023-5558.yaml
 http/cves/2023/CVE-2023-5561.yaml
 http/cves/2024/CVE-2024-32735.yaml
 http/cves/2024/CVE-2024-32736.yaml
@@ -20,8 +29,11 @@ http/cves/2024/CVE-2024-44349.yaml
 http/cves/2024/CVE-2024-4439.yaml
 http/cves/2024/CVE-2024-45488.yaml
 http/cves/2024/CVE-2024-46310.yaml
+http/cves/2024/CVE-2024-48914.yaml
 http/cves/2024/CVE-2024-5910.yaml
 http/cves/2024/CVE-2024-8698.yaml
+http/cves/2024/CVE-2024-9234.yaml
+http/default-logins/apache/doris-default-login.yaml
 http/default-logins/sato/sato-default-login.yaml
 http/default-logins/zebra/zebra-printer-default-login.yaml
 http/exposed-panels/freescout-panel.yaml
