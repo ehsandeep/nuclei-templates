@@ -1,3 +1,4 @@
+dast/cves/2024/CVE-2024-2961.yaml
 http/cves/2015/CVE-2015-8562.yaml
 http/cves/2018/CVE-2018-7192.yaml
 http/cves/2018/CVE-2018-7193.yaml
@@ -9,14 +10,17 @@ http/cves/2023/CVE-2023-1318.yaml
 http/cves/2023/CVE-2023-2745.yaml
 http/cves/2023/CVE-2023-38040.yaml
 http/cves/2023/CVE-2023-39560.yaml
+http/cves/2023/CVE-2023-40748.yaml
 http/cves/2023/CVE-2023-40749.yaml
 http/cves/2023/CVE-2023-40750.yaml
 http/cves/2023/CVE-2023-40751.yaml
 http/cves/2023/CVE-2023-40752.yaml
 http/cves/2023/CVE-2023-40753.yaml
 http/cves/2023/CVE-2023-40755.yaml
+http/cves/2023/CVE-2023-43373.yaml
 http/cves/2023/CVE-2023-5558.yaml
 http/cves/2023/CVE-2023-5561.yaml
+http/cves/2024/CVE-2024-22476.yaml
 http/cves/2024/CVE-2024-32735.yaml
 http/cves/2024/CVE-2024-32736.yaml
 http/cves/2024/CVE-2024-32737.yaml
