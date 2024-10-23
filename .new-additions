@@ -39,9 +39,11 @@ http/cves/2024/CVE-2024-48914.yaml
 http/cves/2024/CVE-2024-5910.yaml
 http/cves/2024/CVE-2024-8698.yaml
 http/cves/2024/CVE-2024-9234.yaml
+http/cves/2024/CVE-2024-9617.yaml
 http/default-logins/apache/doris-default-login.yaml
 http/default-logins/sato/sato-default-login.yaml
 http/default-logins/zebra/zebra-printer-default-login.yaml
+http/exposed-panels/danswer-panel.yaml
 http/exposed-panels/freescout-panel.yaml
 http/exposed-panels/paloalto-expedition-panel.yaml
 http/exposed-panels/sqlpad-panel.yaml
@@ -54,6 +56,7 @@ http/misconfiguration/root-path-disclosure.yaml
 http/misconfiguration/unauth-cyber-power-systems.yaml
 http/takeovers/wasabi-bucket-takeover.yaml
 http/technologies/accellion-detect.yaml
+http/technologies/lollms-webui-detect.yaml
 http/technologies/mirth-connect-detect.yaml
 http/technologies/oracle-fusion-detect.yaml
 http/technologies/salesforce-b2c-commerce-webdav.yaml
